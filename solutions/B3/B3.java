@@ -8,19 +8,24 @@ public class B3 {
         input = input.replace("},{", "}-{");
         String[] s = input.split("-");
         int n = 0;
+        String output = "";
         // String input = in.nextLine():
+
         for (int i = 0; i < s.length; i++) {
             for (int j = 0; j < s.length; j++) {
                 if (i != j) {
                     if (s[i].equals(s[j])) {
-                        System.out.println("Son iguales i=" + i + " j=" + j);
-
-                    } else {
-                        System.out.println("No son iguales i=" + i + " j=" + j);
-                        n++;
+                        s[i] = "";
                     }
                 }
             }
+        }
+
+        for (int i = 0; i < s.length; i++) {
+            if (s[i] != "") {
+                output = s[i];
+            }
+
         }
         System.out.println("");
         in.close();
