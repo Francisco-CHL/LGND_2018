@@ -12,8 +12,8 @@ public class B3 {
 
         for (int i = 0; i < s.length; i++) {
             for (int j = 0; j < s.length; j++) {
-                if (s[i] == s[j]) {
-                    System.out.println(s[i] + " - " + s[j]);
+                if (s[i] != s[j]) {
+                    System.out.println(" No Existe" + s[i] + " - " + s[j]);
                 }
             }
         }
