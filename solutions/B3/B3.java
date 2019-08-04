@@ -24,12 +24,12 @@ public class B3 {
 
         for (int i = 0; i < s.length; i++) {
             if (s[i] != "") {
-                output += s[i];
+                output += s[i] + ",";
                 n++;
             }
         }
-        output = output.replace("}{", "},{");
-        System.out.print(n + " " + output);
+        // output = output.replace("}{", "},{");
+        System.out.print(n + " " + output.substring(0, output.length() - 1));
         System.out.println("");
     }
 }
