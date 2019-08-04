@@ -29,7 +29,7 @@ public class B3 {
             }
         }
         output = output.replace("}{", "},{");
-        System.out.print(n + output);
+        System.out.print(n + " " + output);
         System.out.println("");
     }
 }
