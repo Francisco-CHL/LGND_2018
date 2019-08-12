@@ -20,9 +20,21 @@ public class C3 {
 		}
 
 		for (int i = 0; i < 10; i = i + 2) {
+			int updown = i;
 			for (int j = 0; j < 10; j++) {
-
+				if (updown % 2 == 0) {
+					if (isValid(matriz[updown][j])) {
+						System.out.print(matriz[updown][j] + " ");
+					}
+					updown++;
+				} else {
+					if (isValid(matriz[updown][j])) {
+						System.out.print(matriz[updown][j] + " ");
+					}
+					updown--;
+				}
 			}
+			System.out.println("");
 		}
 	}
 
