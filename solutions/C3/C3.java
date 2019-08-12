@@ -6,9 +6,6 @@ public class C3 {
 		String linea[] = inManual.split("-");
 		Scanner in = new Scanner(System.in);
 		String[][] matriz = new String[10][10];
-		int arriba = 0;
-		int abajo = 1;
-		boolean flag = true;
 
 		for (int i = 0; i < 10; i++) {
 			// String input = in.nextLine();
