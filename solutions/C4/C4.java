@@ -5,5 +5,7 @@ public class C4 {
         Scanner in = new Scanner(System.in);
         String input = in.nextLine();
 
+	System.out.println(input);
+	
     }
 }
