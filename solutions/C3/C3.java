@@ -24,12 +24,18 @@ public class C3 {
 			for (int j = 0; j < 10; j++) {
 				if (updown % 2 == 0) {
 					if (isValid(matriz[updown][j])) {
-						System.out.print(matriz[updown][j] + " ");
+						System.out.print(matriz[updown][j]);
+						if (j < 9) {
+							System.out.print(" ");
+						}
 					}
 					updown++;
 				} else {
 					if (isValid(matriz[updown][j])) {
-						System.out.print(matriz[updown][j] + " ");
+						System.out.print(matriz[updown][j]);
+						if (j < 9) {
+							System.out.print(" ");
+						}
 					}
 					updown--;
 				}
