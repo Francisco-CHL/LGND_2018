@@ -11,14 +11,8 @@ public class C3 {
 		String[][] matriz = new String[10][10];
 
 		for (int i = 0; i < 10; i++) {
-<<<<<<< HEAD
 			String input = in.nextLine();
 			String[] line = input.split(" ");// Cambiar linea[] por input
-=======
-			// String input = in.nextLine();
-			// in.close();
-			String[] line = linea[i].split(" ");// Cambiar linea[] por input
->>>>>>> 9926514e5e2042c59bf25b1e09638f7cc1039d40
 			for (int j = 0; j < line.length; j++) {
 				matriz[i][j] = line[j];
 			}
