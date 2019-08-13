@@ -10,7 +10,7 @@ public class C3 {
 		for (int i = 0; i < 10; i++) {
 			// String input = in.nextLine();
 			// in.close();
-			String[] line = linea[i].split(" ");// Cambiar linea[] por input[]
+			String[] line = linea[i].split(" ");// Cambiar linea[] por input
 			for (int j = 0; j < line.length; j++) {
 				matriz[i][j] = line[j];
 			}
