@@ -22,23 +22,35 @@ public class C3 {
 				if (updown % 2 == 0) {
 					if (isValid(matriz[updown][j])) {
 						System.out.print(matriz[updown][j]);
-						if (j < 9) {
-							System.out.print(" ");
-						}
+						System.out.print(space(j));
 					}
 					updown++;
 				} else {
 					if (isValid(matriz[updown][j])) {
 						System.out.print(matriz[updown][j]);
-						if (j < 9) {
-							System.out.print(" ");
-						}
+						System.out.print(space(j));
 					}
 					updown--;
+				}
+				if (j < 9) {
+					System.out.print(" ");
+				} else {
+					System.out.print("");
 				}
 			}
 			System.out.println("");
 		}
+	}
+
+	public static String space(int n) {
+		String resp = "";
+		int num = n;
+		if (num < 9) {
+			resp = " ";
+		} else {
+			resp = "";
+		}
+		return resp;
 	}
 
 	public static boolean isValid(String n) {
