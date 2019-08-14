@@ -26,17 +26,17 @@ public class C4 {
         int rec = 0;
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                out += matrix[i][j];
+                out += matrix[i][j] + " ";
                 res += Integer.parseInt(matrix[i][j]);
                 if (j == cols - 1) {
                     for (int k = 0; k < rows; k++) {
                         for (int l = 0; l < cols; l++) {
-                            out2 += matrix[l][k];
+                            out2 += matrix[l][k] + " ";
                             res2 += Integer.parseInt(matrix[l][k]);
                             if (l == cols - 1) {
                                 if (res == res2) {
                                     existe = true;
-                                    output += res + " = " + out + ";" + out2 + "\n";
+                                    output += res + " = " + out.trim() + " ; " + out2.trim() + "\n";
                                 }
                                 res2 = 0;
                                 out2 = "";
@@ -50,7 +50,7 @@ public class C4 {
         }
 
         if (existe == true) {
-            System.out.print(output);
+            System.out.println(output.trim());
         } else {
             System.out.println("SIN PORCIONES EQUIVALENTES");
         }
